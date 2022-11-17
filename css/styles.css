@@ -58,7 +58,7 @@ nav ul li a:hover::after{
 }
 
 .container{
-  padding: 5% 5%;
+  padding: 10px 10%;
 }
 
 .logo{
@@ -412,6 +412,7 @@ i.fa-laptop-code{
 
   .header-text h1{
     font-size: 40px;
+    margin-bottom: 10px;
   }
 
   i.fa-laptop-code{
