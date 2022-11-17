@@ -109,6 +109,10 @@ nav ul li a:hover::after{
   overflow-wrap: break-word;
 }
 
+.about-col-2 .description{
+  margin-top: 10px;
+}
+
 .sub-title{
   font-size: 50px;
   font-weight: 600;
