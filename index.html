@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/bbb1f8638c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./images/logo1.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Web Developer</p>
+        <h1>Hi, I'm <span>Gokul</span> Pandian C</h1>
+      </div>
+    </div>
+  </div>
+<!-- About section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+            <img class="profile-pic" src="./images/profile.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Worked in the field of computer networks and security for 1.5 years. With an interest to develop an understanding of how applications work I ventured into learning programming which led to me evolving in the field. I would like to collaborate as well as learn in a work environment and be a part in providing solutions to the emerging and challenging tech world.  </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills-content')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills-content">
+            <ul>
+              <li> <span>WEB DEVELOPMENT</span> <br>Web App Development, Application Design</li>
+              <li> <span>CYBER SECURITY</span> <br>Network Security, SIEM, Firewall Monitoring</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li> <span>FEB 2022-SEP 2022</span> <br>CYBER TECHNICAL ASSOCIATE- NECURITY SOLUTIONS</li>
+              <li> <span>JUL 2016-MARCH 2017</span> <br>ASSISTANT SYSTEM ENGINEER- TATA CONSULTANCY SERVICES</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li> <span>2012-2016</span> <br>B.E Electrical and Electronics Engineering- SRM Easwari Engineering College, Chennai</li>
+              <li> <span>+2</span> <br>Computer Science(Major) from Jaycess Matriculation School, Sivakasi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Services section -->
+<div id="skills">
+  <div class="container">
+    <h1 class="sub-title">Skill Sets</h1>
+    <div class="skillset-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Development</h2>
+        <p>React.js, Node.js, Express, MongoDB, Python, Python-Flask, CSS, HTML</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-shield"></i>
+        <h2>Cyber Security</h2>
+        <p>Network PenTesting, SIEM (Security Information and Event Management), Network Monitoring, Active Directory Handling, Firewall monitoring.</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-pen-to-square"></i>
+        <h2>UI/UX Design</h2>
+        <p>Adobe XD, Figma, Wireframing, Prototyping</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Projects -->
+<div id="projects">
+  <div class="container">
+    <h1 class="sub-title">Projects</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="./images/Keeper_Notes.jpg">
+        <div class="layer">
+          <h3>Keeper Notes App</h3>
+          <a href="https://github.com/gpandia/Keeper_Notes_App" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/Secrets_Fun.jpg">
+        <div class="layer">
+          <h3>Share Secrets</h3>
+          <a href="https://github.com/gpandia/Secrets_Fun" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/To-DoListApp.jpg">
+        <div class="layer">
+          <h3>ToDo_List_App</h3>
+          <a href="https://github.com/gpandia/ToDoList" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/Blog.jpg">
+        <div class="layer">
+          <h3>BlogApp</h3>
+          <a href="https://github.com/gpandia/Blog_EJS" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <i class="fa-solid fa-bars-progress"></i>
+        <div class="layer">
+          <h3>Work In Progress</h3>
+          <a href="#Projects"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <i class="fa-solid fa-bars-progress"></i>
+        <div class="layer">
+          <h3>Work In Progress</h3>
+          <a href="#Projects"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a id="load-more" class="btn">See More</a>
+  </div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="column-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>gokulcofficial@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>+91 9952224877</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/gokul-pandian-c-190880226/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/gpandia" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="./images/Resume.pdf" download class="btn btn2" target="_blank">Download CV</a>
+      </div>
+      <div class="column-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript">
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+      sidemenu.style.right="-200px";
+    }
+  </script>
+
+  <script>
+    let loadMoreBtn = document.getElementById("load-more");
+    let currentItem = 3;
+
+    loadMoreBtn.onclick = () => {
+      let boxes = [...document.querySelectorAll(".container .work-list .work")];
+      for (var i=0; i < currentItem + 3; i++){
+        boxes[i].style.display ="inline-block";
+      }
+      currentItem += 3;
+      if(currentItem >= boxes.length){
+        loadMoreBtn.style.display="none";
+      }
+    }
+  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxXaTA2MgdYKfj2gEuJAJPsvlXTLVhPKlxzOMMX-lsvtgpWAsRG_DuKc45s2r0ZbwJMbA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  // const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => 
+      {
+
+        msg.innerHTML = "Message sent Successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        }, 2000)
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+
+
+</html>
