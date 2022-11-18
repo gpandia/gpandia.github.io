@@ -93,7 +93,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
 
 .about-col-1 img{
@@ -109,8 +109,8 @@ nav ul li a:hover::after{
   overflow-wrap: break-word;
 }
 
-.about-col-2 .description{
-  margin-top: 10px;
+.about-col-1 .description{
+  margin-top: 20px;
 }
 
 .sub-title{
